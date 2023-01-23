@@ -18,11 +18,9 @@ recognition.onend = () => {
 
 recognition.onresult = function (e) {
   const resultIndex = e.resultIndex;
-
   const { transcript } = e.results[resultIndex][0];
-  console.log(resultIndex)
   console.log(transcript);
-  //speakOutLoud(transcript);
+  speakOutLoud(transcript);
 };
 
 function speakNow() {
@@ -45,8 +43,10 @@ function speakOutLoud(transcript) {
   const speechSynthesis =
     window.speechSynthesis || window.webkitspeechSynthesis;
 
-  var list1 = ["hi", "hello", "hai"];
-  for (item of list1) {
+  // Thalha - 22/01/23 
+  // Greeting 1
+  var greeting1 = ["hi", "hello", "hai"];
+  for (item of greeting1) {
     if (spoken.includes(item)) {
       utterance.volume = 1; 
       utterance.rate = 1;
