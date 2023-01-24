@@ -70,6 +70,20 @@ function speakOutLoud(transcript) {
       break;
     }
   }
+  
+  // Thalha - 24/01/23
+  // service
+  var service = ["what are the services provided"];
+  for (item of service) {
+    if (spoken.includes(item)) {
+      utterance.volume = 1; 
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.text = "We Provide all Web related services like Website Designing, Development...";
+      speechSynthesis.speak(utterance);
+      break;
+    }
+  }
 
   
 
