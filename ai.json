@@ -1,0 +1,14 @@
+data = `[
+
+{"..." : ""},
+
+{"hi" : "hello",
+"hello" : "hello",
+"hai" : "hello"},
+
+{"how are you" : "Thanks For Asking, I'm Fine...",
+"how about you" : "Thanks For Asking, I'm Fine...",
+"how are you doing" : "Thanks For Asking, I'm Fine...",
+"is all well" : "Thanks For Asking, I'm Fine..."}
+
+]`;
